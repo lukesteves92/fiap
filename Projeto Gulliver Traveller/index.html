@@ -25,6 +25,8 @@
   </head>
 
   <body>
+
+    <script src="./js/traveller.js"></script>
     <header>
       <h1 class="name_title">Gulliver Traveller</h1>
       <ul>
@@ -89,7 +91,25 @@
                     </p>
 
                     <p>
-                        <button type="submit">Enviar</button>
+                        <label for="category">Qual a categoria?*</label>
+                        <select id="category" required>
+                            <option value="0">Selecione uma opção</option>
+                            <option value="1">Cinema e Literatura</option>
+                            <option value="2">Especial</option>
+                            <option value="3">Exposições</option>
+                            <option value="4">Gastronomia</option>
+                            <option value="5">Música e Shows</option>
+                            <option value="6">Teatro e Dança</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <h4>Detalhes:</h4>
+                        <textarea name="details" maxlength="100" placeholder="Máximo 100 caracteres" id="details"></textarea>
+                    </p>
+
+                    <p>
+                        <button type="button" id="put" onclick="click()">Enviar</button>
                         <button type="reset" id="limpar">Limpar dados</button>
                     </p>
                 </form> 
