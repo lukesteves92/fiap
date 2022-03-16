@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.13.0/devicon.min.css"
+    />
+
+    <link rel="icon" type="image/png" href="./images/ponteestaida.jpg" />
+
+    <title>Gulliver Traveller</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="name_title">Gulliver Traveller</h1>
+      <ul>
+        <li><a href="#general">Formulário</a></li>
+        <li><a href="#about">Sobre Nós</a></li>
+
+      </ul>
+    </header>
+
+    <main>
+      <div class="general_item" id="general">
+        <div class="person_img">
+          <img src="./images/ponteestaida.jpg" />
+        </div>
+      </div>
+      <div class="general_item">
+        <div class="apps_img">
+          <div>
+            <p class="braces">{</p>
+          </div>
+         <div class="container_apichallenge app">
+            <p><h2 class="name_title">Cadastrar Ponto Turístico</h2></p>
+            <div>
+                <form action="" method="post" id="register">
+                    <p>
+                        <label for="local">Qual a localidade?*</label>
+                        <input type="text" id="local" maxlength="20" placeholder="Ex: São Paulo" required>
+                    </p>
+
+                    <p>
+                        <label for="name">Nome do ponto turístico:*</label>
+                        <input type="text" id="name" maxlength="30" placeholder="Ex: Ponte Estaiada" required>
+                    </p>
+
+                    <p>
+                        <label for="ticket">Qual o valor do ingresso?(opcional)</label>
+                        <input type="text" id="name" maxlength="20" placeholder="Ex: R$15,00">
+                    </p>
+
+                    <p>
+                        <fieldset>
+                            <label for="month">Início funcionamento:*</label><input type="month" id="month">
+                        </fieldset>
+                    </p>
+
+                    <p>
+                        <fieldset>
+                            <h4>Qual a região?:*</h4>
+                            <input type="radio" name="centro" id="centro">
+                            <label for="first">Centro</label>                   
+                            <input type="radio" name="leste" id="leste">
+                            <label for="second">Leste</label>
+                            <input type="radio" name="norte" id="norte">
+                            <label for="third">Norte</label>
+                            <input type="radio" name="oeste" id="oeste">
+                            <label for="fourth">Oeste</label>
+                            <input type="radio" name="sul" id="sul">
+                            <label for="fifth">Sul</label>
+                            <input type="radio" name="allregions" id="sul">
+                            <label for="master">Todas</label>
+                        </fieldset>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar</button>
+                        <button type="reset" id="limpar">Limpar dados</button>
+                    </p>
+                </form> 
+            </div>
+          </div>
+          <div class="braces_container">
+            <p class="braces">}</p>
+          </div>
+        </div>
+      </div>
+      <div class="div_braces_text">
+        <p class="braces_text">Applications built using native Android, KOTLIN</p>
+      </div>
+     </main>
+    <h2 class="about_title" id="about">Sobre Nós</h2>
+    <section>
+      <div class="about">
+        <div class="about_text">
+          <h3>Somos a Gulliver Traveller!</h3>
+          <p>
+            Estamos no mercado há 1 ano e auxiliando as pessoas a encontrarem os pontos de turísticos desejados! :)
+          </p>
+        </div>
+      </div>
+    </section>
+    </body>
+</html>
