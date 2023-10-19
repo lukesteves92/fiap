@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html 	xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+		xmlns:h="http://xmlns.jcp.org/jsf/html"
+		xmlns:f="http://xmlns.jcp.org/jsf/core"
+		xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="_template.xhtml">
+
+	<ui:define name="content">
+		
+		<div class="card">
+		    <h:form>
+		        <p:dataTable var="rentalCompany" value="#{rentalCompanyBean.rentalCompanies}">
+		            <f:facet name="header">
+		                Locadoras
+		            </f:facet>
+		
+		            <p:column headerText="Nome">
+		                <h:outputText value="#{rentalCompany.name}"/>
+		            </p:column>
+		
+		            <p:column headerText="Image">
+		                <p:graphicImage url="#{rentalCompany.urlImage}" styleClass="p-shadow-2" width="100"/>
+		            </p:column>
+		
+		            <p:column headerText="Descricao">
+		                <h:outputText value="#{rentalCompany.description}"/>
+		            </p:column>
+		
+		           	<p:column headerText="Avaliacao">
+                        <p:rating readonly="true" value="#{rentalCompany.ratingsAvg}"/>
+                    </p:column>
+		            
+		            <p:column>
+                        <p:commandButton value="Ver Mais" action="#{rentalCompanyBean.details}" >
+                           <f:setPropertyActionListener value="#{rentalCompany}" target="#{rentalCompanyBean.rental}"/>
+                       </p:commandButton>
+                   	</p:column>
+		            
+		        </p:dataTable>
+		    </h:form>
+		</div>
+
+	</ui:define>
+
+</ui:composition>
+</html>
