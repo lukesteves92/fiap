@@ -1,0 +1,7 @@
+com/iaragames/repository/UserRepository.class
+com/iaragames/IaragamesApplication.class
+com/iaragames/model/User.class
+com/iaragames/model/Game.class
+com/iaragames/repository/GameRepository.class
+com/iaragames/controller/UserController.class
+com/iaragames/controller/GameController.class
