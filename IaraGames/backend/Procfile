@@ -1,1 +1,1 @@
-web: java -jar target/seu-projeto.jar
+web: java -jar target/iaragames-0.0.1-SNAPSHOT.jar
