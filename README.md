@@ -1,7 +1,7 @@
 
 # Iara Games Platform
 
-Este repositório contém o código-fonte da plataforma **Iara Games**, desenvolvida como parte do projeto de faculdade. A plataforma visa fornecer uma solução de cadastro e gerenciamento de usuários e jogos, utilizando **Java com Spring Boot** no back-end e **React** no front-end.
+Este repositório contém o código-fonte da plataforma **Iara Games**, desenvolvida como parte do projeto de faculdade. A plataforma visa fornecer uma solução de cadastro e gerenciamento de usuários e jogos, utilizando **Java com Spring Boot** no back-end e front-end.
 
 ## Sumário
 - [Visão Geral](#visão-geral)
@@ -22,7 +22,6 @@ A plataforma Iara Games oferece funcionalidades para cadastrar, listar e gerenci
 
 - **Java 17**
 - **Spring Boot 3**
-- **React 18**
 - **MySQL** (para banco de dados)
 - **Bootstrap** (para estilização do front-end)
 - **Vercel** (para deploy do front-end)
@@ -36,8 +35,8 @@ O repositório está organizado da seguinte forma:
 ├── backend/                # Código-fonte do servidor (Java/Spring Boot)
 │   ├── src/                # Código-fonte do aplicativo
 │   └── README.md           # Instruções específicas do backend
-├── frontend/               # Código-fonte do cliente (React)
-│   ├── src/                # Código-fonte do aplicativo React
+├── frontend/               # Código-fonte do cliente
+│   ├── src/                # Código-fonte do aplicativo
 │   └── README.md           # Instruções específicas do frontend
 ├── docs/                   # Documentação do projeto (diagramas, instruções, etc.)
 └── README.md               # Documento principal com instruções gerais
@@ -65,23 +64,6 @@ O repositório está organizado da seguinte forma:
 4. Execute o back-end utilizando o Maven:
    ```bash
    mvn spring-boot:run
-   ```
-
-### Front-end
-
-1. Navegue até a pasta do **frontend**:
-   ```bash
-   cd frontend
-   ```
-
-2. Instale as dependências do projeto:
-   ```bash
-   npm install
-   ```
-
-3. Inicie o front-end:
-   ```bash
-   npm start
    ```
 
 ## Deploy
